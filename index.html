@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro Médico Salud+</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <span class="brand-logo" aria-hidden="true">CM</span>
+        <span class="brand-text">Centro Médico Salud+</span>
+      </a>
+
+      <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-label="Mostrar navegación" />
+      <label class="nav-toggle-label" for="nav-toggle">
+        <span class="hamburger"></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+        <a href="tel:+56223456789" class="nav-phone">
+          <span aria-hidden="true">📞</span>
+          +56 2 2345 6789
+        </a>
+        <a href="#cita" class="btn btn-primary">Agendar Cita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Tu salud es nuestra <span class="highlight">prioridad</span></h1>
+          <p>Brindamos atención médica de calidad con profesionales altamente capacitados y tecnología de vanguardia para cuidar tu bienestar y el de tu familia.</p>
+
+          <div class="hero-actions">
+            <a href="#cita" class="btn btn-primary">Agendar Cita</a>
+            <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">📅</div>
+              <div>
+                <h3>Citas Rápidas</h3>
+                <p>Agenda en minutos</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">⏰</div>
+              <div>
+                <h3>24/7 Urgencias</h3>
+                <p>Siempre disponibles</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🛡️</div>
+              <div>
+                <h3>Certificados</h3>
+                <p>Excelencia médica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-frame" role="img" aria-label="Centro Médico Moderno"></div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-icon">✅</div>
+              <div>
+                <p class="stat-number">15,000+</p>
+                <p class="stat-label">Pacientes satisfechos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2>Servicios</h2>
+        <p class="lead">Todo lo que necesitas en un solo lugar.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Consultas Generales</h3>
+            <p>Atención médica personalizada para toda la familia.</p>
+          </article>
+          <article class="card">
+            <h3>Odontología</h3>
+            <p>Cuida tu sonrisa con tecnología moderna.</p>
+          </article>
+          <article class="card">
+            <h3>Laboratorio</h3>
+            <p>Resultados rápidos y confiables.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section section-alt">
+      <div class="container">
+        <h2>Nosotros</h2>
+        <p class="lead">Un equipo comprometido con tu bienestar.</p>
+        <div class="two-col">
+          <div>
+            <p>En Centro Médico Salud+ combinamos experiencia, empatía y tecnología para brindar una atención integral. Nuestro equipo está formado por especialistas certificados que trabajan con un enfoque humano y preventivo.</p>
+          </div>
+          <div>
+            <ul class="list">
+              <li>Atención personalizada</li>
+              <li>Protocolos de seguridad</li>
+              <li>Instalaciones modernas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipo" class="section">
+      <div class="container">
+        <h2>Equipo</h2>
+        <p class="lead">Profesionales líderes en su área.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Dr. Juan Pérez</h3>
+            <p>Medicina general</p>
+          </article>
+          <article class="card">
+            <h3>Dra. María López</h3>
+            <p>Odontología</p>
+          </article>
+          <article class="card">
+            <h3>Dr. Carlos Ruiz</h3>
+            <p>Laboratorio clínico</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cita" class="section section-cta">
+      <div class="container">
+        <h2>Agendar Cita</h2>
+        <p class="lead">Da el primer paso hacia tu bienestar.</p>
+        <form class="form" action="#" method="post">
+          <div class="form-grid">
+            <label>
+              Nombre
+              <input type="text" name="nombre" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Teléfono
+              <input type="tel" name="telefono" required />
+            </label>
+            <label>
+              Mensaje
+              <textarea name="mensaje" rows="4" required></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p class="lead">Estamos aquí para ayudarte.</p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Teléfono</h3>
+            <p><a href="tel:+56223456789">+56 2 2345 6789</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Dirección</h3>
+            <p>Avenida Salud 123, Santiago, Chile</p>
+          </div>
+          <div class="contact-card">
+            <h3>Horario</h3>
+            <p>Lunes a Viernes: 08:00 - 20:00</p>
+            <p>Sábados: 09:00 - 14:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Centro Médico Salud+. Todos los derechos reservados.</p>
+      <p>Desarrollado con ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>
